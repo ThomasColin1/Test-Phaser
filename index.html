@@ -195,7 +195,7 @@
           player.anims.play("turn");
         }*/
 
-        if (cursors.up.isDown) {
+        if (cursors.up.isDown || game.input.pointer1.isDown) {
           player.setVelocityY(-250);
         }
       }
