@@ -198,6 +198,10 @@
         if (cursors.up.isDown) {
           player.setVelocityY(-250);
         }
+        var pointer = game.input.activePointer;
+        if (pointer.isDown) {
+          player.setVelocityY(-250);
+        }
       }
 
       function hitBomb(player, bomb) {
